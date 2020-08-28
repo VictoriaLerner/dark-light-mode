@@ -16,6 +16,7 @@ function lightMode() {
     toogleIcon.children[1].classList.add('fa-sun');
     toogleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
     textBox.style.backgroundColor = 'rgb(0 0 0 / 50%)';
+    toogleIcon.children[0].textContent = 'Light Mode';
 }
 
 toogleSwitch.addEventListener('change', (event) => {
@@ -41,6 +42,6 @@ if (currentTheme) {
     if (currentTheme === 'dark') {
         toogleSwitch.checked = true;
         darkMode();
-
     }
+
 }
